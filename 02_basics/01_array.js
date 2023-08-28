@@ -27,11 +27,11 @@ const myArr2 = new Array(1,2,3,4)
 
  console.log("A", myArr);
 
- const myn1 = myArr.slice(1,3)//slice dont change the original array
+ const myn1 = myArr.slice(1,3)//slice dont change the original array and print till last-1 element
  console.log(myn1);
 
  console.log("B", myArr);
 
- const myn2 = myArr.splice(1,3); //splice made the changes in original array
+ const myn2 = myArr.splice(1,3); //splice made the changes in original array and print till the last element
  console.log("C", myArr);
  console.log(myn2);
