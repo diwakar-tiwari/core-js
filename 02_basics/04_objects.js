@@ -35,10 +35,27 @@ const obj3 = {...obj1, ...obj2} //spread operator
 
 // console.log(obj3);
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser)); //array of keys and values in it
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser)); //array of keys and values in it
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); //check if property exists or not and return boolean 
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //check if property exists or not and return boolean 
+
+//----------------------------OBJECT DESTRUCTURING--------------
+
+const course = {
+    courseName:"JavaScript",
+    price:999,
+    courseInstructor: "Diwakar"
+}
+
+// console.log(course.courseInstructor) --> It will be difficult if i have to access many values from the objects, so in this case we will use the concept of object destructuring 
+
+// const {courseInstructor} = course
+
+const {courseInstructor: instructor , price} = course //in destructuring we can give any name and can access through the same
+
+// console.log(courseInstructor);
+console.log(instructor, price);
