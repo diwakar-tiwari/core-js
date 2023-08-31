@@ -13,10 +13,12 @@ one()
 
 
 //example
+//--hoisting
 console.log(addOne(5)); 
 function addOne(num){
     return num+1;
 }
+
 
  
 addTwo(5)
